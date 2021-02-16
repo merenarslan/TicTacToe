@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+    Name : Melih Arslan
+    Project Name : TicTacToe
+    Start Date : 02-15-2021
+    Last Update : 02-16-2021
+-->
+<html>
+    <head>
+        <title> TIC TAC TOE </title>
+        <script type="text/javascript" src="jscript/jscript.js" async></script>
+        <link rel="shortcut icon" href="#"/>   
+        <link rel="stylesheet" type="text/css" href="css/newcss.css">        
+    </head>
+    <body>
+<!-- main content -->
+<header>   
+   <h1>Tic Tac Toe!</h1>
+</header>
+
+<!-- game board -->
+<table>
+  <tr>
+    <td id='space0' onClick="cellClicked(0);"></td>
+    <td id='space1' onClick="cellClicked(1);"></td>
+    <td id='space2' onClick="cellClicked(2);"></td>
+  </tr>
+  <tr>
+    <td id='space3' onClick="cellClicked(3);"></td>
+    <td id='space4' onClick="cellClicked(4);"></td>
+    <td id='space5' onClick="cellClicked(5);"></td>
+  </tr>
+  <tr>
+    <td id='space6' onClick="cellClicked(6);"></td>
+    <td id='space7' onClick="cellClicked(7);"></td>
+    <td id='space8' onClick="cellClicked(8);"></td>
+  </tr>
+</table>
+
+<!-- play information and controls -->
+<p>Player <span id="player">X</span> Go!
+  <button id="reset">Reset Game</button>
+</p>
+
+<!-- footer -->
+ <footer>
+</footer>
+
+<!-- hidden elements used for displaying results -->
+<div id="message">
+  <p>GAME OVER!</p>
+    <h3 id="winner"></h3>
+  <p>&mdash;click anywhere in the box to dismiss this message&mdash;</p>
+</div>
+<div id="overlay"></div>
+    </body>
+</html>
